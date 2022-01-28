@@ -25,6 +25,9 @@ public class ProductModel {
     @Column(length = 150, nullable = false, unique = false)
     private String name;
 
+    @Column(length = 150, nullable = false, unique = false)
+    private String category;
+
     private String image;
     private int price;
     private int stock;
