@@ -1,1 +1,1 @@
-# stock-backend RESTful API Spring Boot 
+# Mini Project RESTful API Spring Boot: Stock Backend  
