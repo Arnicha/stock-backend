@@ -16,6 +16,7 @@ public class ProductRequest {
     @NotEmpty
     @Size(min = 2, max = 100)
     private String name;
+    private String category;
     private MultipartFile image;
     private int price;
     private int stock;

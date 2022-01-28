@@ -37,6 +37,7 @@ public class ProductServiceImp implements ProductService {
         String fileName = storageService.store(productRequest.getImage());
         ProductModel data = new ProductModel();
         data.setName(productRequest.getName());
+        data.setCategory(productRequest.getCategory());
         data.setImage(fileName);
         data.setPrice(productRequest.getPrice());
         data.setStock(productRequest.getStock());
@@ -53,6 +54,8 @@ public class ProductServiceImp implements ProductService {
                 existingProduct.setImage(fileName);
             }
             existingProduct.setName(productRequest.getName());
+            existingProduct.setCategory((productRequest.getCategory()));
+            existingProduct.setCategory(productRequest.getCategory());
             existingProduct.setPrice(productRequest.getPrice());
             existingProduct.setStock(productRequest.getStock());
             return productRepository.save(existingProduct);
